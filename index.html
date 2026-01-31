@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To Do List</h1>
+
+        <div class="items">
+            <label for="task-one">1.</label>
+            <input type="text" id="task-one">
+        </div>
+
+        <div class="items">
+            <label for="task-two">2.</label>
+            <input type="text" id="task-two">
+        </div>
+
+        <div class="items">
+            <label for="task-three">3.</label>
+            <input type="text" id="task-three">
+        </div>
+
+        <div class="items">
+            <label for="task-four">4.</label>
+            <input type="text" id="task-four">
+        </div>
+        <!-- When clicked, show the tasks that was typed inside the input -->
+        <button onclick="getList()">List tasks</button>
+    </div>
+    <div class="show-container" id="show">
+        <!-- Hide this first, after submit button -> show -->
+        <h2 id="show-list"></h2>
+        <p id="show-one"></p>
+        <p id="show-two"></p>
+        <p id="show-three"></p>
+        <p id="show-four"></p>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
